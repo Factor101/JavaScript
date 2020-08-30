@@ -46,7 +46,10 @@ const hurt = function() {
      * @event {player_hurt}
      * @return {void(null)}
      */
-    var receiver = Entity.GetEntityFromUserID(Event.GetInt("userid"));
+    const receiver = Entity.GetEntityFromUserID(Event.GetInt("userid"));
+    const attacker = Entity.GetEntityFromUserID(Event.GetInt("attacker"));
+    const local = Entity.GetLocalPlayer();
+    if( attacker !== local ) return;
     if( !Entity.IsValid(receiver) || !Entity.IsEnemy(receiver) ) { 
         return null; 
     }
