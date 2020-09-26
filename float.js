@@ -1,8 +1,7 @@
 /**
-* If you are running in ES5 (onetap), replace "const" with "var", and add the Object.prototype.values method below to your code.
+* If you are running in ES5 (onetap), replace "const" with "var", and add the Object.prototype.values method below to your code. 
 */
 
-/*
 Object.prototype.values = function(obj) {
     var values = [];
     Object.keys(obj).forEach(function (key) {
@@ -10,7 +9,6 @@ Object.prototype.values = function(obj) {
     });
     return values;
 }
-*/
 
 const float = {
     /**
