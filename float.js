@@ -1,3 +1,17 @@
+/**
+* If you are running in ES5, replace "const" with "var", and add the Object.prototype.values method below to your code.
+*/
+
+/*
+Object.prototype.values = function(obj) {
+    var values = [];
+    Object.keys(obj).forEach(function (key) {
+        values.push(obj[key]);
+    });
+    return values;
+}
+*/
+
 const float = {
     /**
      * @param {(Float[] | ...Float)} arr - Either an array of floats, or indefinite amount of floats
