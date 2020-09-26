@@ -37,20 +37,6 @@ const float = {
         return (ints[0] - ints[1]) / Math.pow(10, prec);
     },
     /**
-     * @param {(Float[] | ...Float)} arr - Either an array of floats, or indefinite amount of floats
-     * @example
-     *      float.mult([1.0, 2.4]);
-     *      float.mult(1.0, 2.4, 3.1);
-     * @returns {Float} - Product of arguments
-     */
-    mult: function(arr) {
-        if( typeof arr !== 'object' ) {
-            arr = Object.values(arguments);
-        }
-        const prec = this.getPrec(arr);
-        return (this.toInt(arr, prec).reduce(function(a, b){return a * b}, 1)) / Math.pow(10, 2 * prec);
-    },
-    /**
      * @description - Returns the average of a set of floats.
      * 
      * @param {(Float[] | ...Float)} arr - Either an array of floats, or indefinite amount of floats
