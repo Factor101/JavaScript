@@ -1,5 +1,5 @@
 /**
-* If you are running in ES5, replace "const" with "var", and add the Object.prototype.values method below to your code.
+* If you are running in ES5 (onetap), replace "const" with "var", and add the Object.prototype.values method below to your code.
 */
 
 /*
